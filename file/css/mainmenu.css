@@ -1,0 +1,49 @@
+.item {
+    background-color: #141414;
+    padding: 10px;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 10px;
+    float: left;
+}
+
+.item hr{
+    width: 80%
+    display: block;
+    border: 2px solid #555555;
+}
+
+.item h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+}
+
+.item2 {
+    background-color: #222222;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.item2 h3 {
+    text-align: left;
+    font-size: 20px;
+}
+
+.item2 p {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+}
+
+#meal, #class {
+    width: max(30vw, 300px);
+    padding-bottom: 5px;
+}
+
+#meal {margin-left: 0;}
+
+.control p {
+    display: inline-block;
+}

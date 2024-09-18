@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <title>서울또봇고 T.F Lab</title>
+        <link href="/file/css/main.css" rel="stylesheet">
+        <link href="/file/css/mainmenu.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="center">
+            <div class="title">
+                <h1>서울또봇고</h1>
+                <h3>made by T.F Lab</h3>
+            </div>
+        </div>
+        <div class="item" id="meal">
+            <h3>급식</h3>
+            <div class="item2">
+                <h3>아침</h3>
+                <hr>
+                <div id="morning"></div>
+            </div>
+            <div class="item2">
+                <h3>점심</h3>
+                <hr>
+                <div id="lunch"></div>
+            </div>
+            <div class="item2">
+                <h3>저녁</h3>
+                <hr>
+                <div id="dinner"></div>
+            </div>
+            <div class="center">
+                <div class="control">
+                    <button><</button>
+                    <p>2024/09/16</p>
+                    <button>></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="item" id="class">
+            <h3>시간표</h3>
+            <select id="grade_">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <p id="d">학년</p>
+            <select id="class_">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+            <p id="d">반</p>
+            <div id="class_item">
+
+            </div>
+        </div>
+        <script src="/file/js/loadMeal.js"></script>
+        <script src="/file/js/loadSchedule.js"></script>
+        <script>
+            window.onload=function(e) {
+                loadMeal();
+                loadSchedule();
+            };
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "bold8";
+    src: url("/file/font/Paperlogy-8ExtraBold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+html, body {
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    font-family: "bold8";
+    margin: 0;
+    padding: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+input, select, option {font-family: "bold8";}
+
+select {
+    border: 0;
+    background-color: #323232;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    display: block;
+}
+.title h1 {
+    margin-bottom: 0;
+    font-size: 50px;
+}
+.title h3 {
+    text-align: right;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+button {
+    border: 0;
+    background-color: #636363;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#d {display: inline-block;}
