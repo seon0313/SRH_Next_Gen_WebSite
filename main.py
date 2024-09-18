@@ -4,7 +4,7 @@ import json
 from module.school import School
 
 with open('./key.txt', 'r') as f:
-    key = f.readline()
+    key = f.readline().replace('\n', '')
     f.close()
 
 app = Flask(__name__)
