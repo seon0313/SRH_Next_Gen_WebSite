@@ -1,9 +1,12 @@
+import os.path
+
 from flask import Flask, render_template, send_file, request
 import time
 import json
 from module.school import School
-
-with open('./key.txt', 'r') as f:
+location = os.path.dirname(os.path.abspath(__file__))
+print(location)
+with open(f'{location}/key.txt', 'r') as f:
     key = f.readline().replace('\n', '')
     f.close()
 
@@ -14,7 +17,7 @@ def mainmenu():
     return render_template('mainmenu.html')
 @app.route('/file/<path:path>')
 def file(path):
-    return send_file(f'./file/{path}')
+    return send_file(f'{location}/file/{path}')
 
 @app.route('/api/<string:name>')
 def api_meal(name):
