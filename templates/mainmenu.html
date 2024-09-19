@@ -32,15 +32,15 @@
             </div>
             <div class="center">
                 <div class="control">
-                    <button><</button>
-                    <p>2024/09/16</p>
-                    <button>></button>
+                    <button onclick="mealDateMinus();"><</button>
+                    <p id="meal_control_p">----/--/--</p>
+                    <button onclick="mealDatePlus();">></button>
                 </div>
             </div>
         </div>
 
         <div class="item" id="class">
-            <h3>시간표</h3>
+            <h3>오늘의 시간표</h3>
             <select id="grade_">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -58,10 +58,12 @@
                 <option value="8">8</option>
             </select>
             <p id="d">반</p>
+            <button onclick="loadSchedule();">갱신</button>
             <div id="class_item">
 
             </div>
         </div>
+        <script src="/file/js/loadDate.js"></script>
         <script src="/file/js/loadMeal.js"></script>
         <script src="/file/js/loadSchedule.js"></script>
         <script>

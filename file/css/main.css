@@ -14,7 +14,10 @@ html, body {
     padding-right: 1vw;
 }
 
-input, select, option {font-family: "bold8";}
+input, select, option, button {
+    font-family: "bold8";
+    font-size: 15px;
+}
 
 select {
     border: 0;

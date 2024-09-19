@@ -2,7 +2,18 @@ import json
 import time
 from urllib.request import urlopen
 class School:
+    def calcDate(date: str):
+        if '-' in date:
+            if len(date) == 10:
+                return date.replace('-','')
+            else:
+                date = date.split('-')
+                if len(date[1]) < 2: date[1] = '0'+date[1]
+                elif len(date[2]) < 2: date[2] = '0'+date[2]
+                return ''.join(date)
+        return date
     def getMeal(date: str, key: str) -> dict:
+        date = School.calcDate(date)
         url = (f'https://open.neis.go.kr/hub/mealServiceDietInfo?ATPT_OFCDC_SC_CODE=B10'
                f'&Type=json'
                f'&KEY={key}'
@@ -27,6 +38,7 @@ class School:
         return result
 
     def getSchedule(grade,class_name: int,date:str, key: str):
+        date = School.calcDate(date)
         url = (f'https://open.neis.go.kr/hub/hisTimetable?ATPT_OFCDC_SC_CODE=B10'
                f'&Type=json'
                f'&KEY={key}'
