@@ -37,7 +37,7 @@
     padding: 0;
 }
 
-#meal, #class {
+#meal, #class, #ad {
     width: max(30vw, 300px);
     padding-bottom: 5px;
 }
@@ -54,4 +54,30 @@
 
 .control p {
     display: inline-block;
+}
+
+.goto_github {
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.download {
+    width: 100%;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.item li {
+    font-size: 20px;
+}
+
+.item ul {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
